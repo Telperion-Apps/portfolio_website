@@ -42,7 +42,7 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="routeshare.html">RouteShare App</a></li>
 				<li><a href="datespark.html">DateSpark App</a></li>
-				<li><a href="elements.html">Gin Rummy Game</a></li>
+				<li><a href="gin_rummy.html">Gin Rummy Game</a></li>
 				<li><a href="workhours.html">Work Hours App</a></li>
 			</ul>
 		</nav>
@@ -50,74 +50,82 @@
 		<div id="main">
 			<div class="inner">
 				<h1>RouteShare</h1>
-				<span class="image main"><img src="images/routeshare_banner.png"
-						alt="RouteShare app screenshots" /></span>
-				<p>RouteShare is a competitive climbing companion built around sharing routes, challenging friends, and
-					tracking group progress over time. The app combines social features with gym-specific route data so
-					climbers can recommend climbs, run friendly competitions, and stay engaged between sessions.</p>
+				<figure>
+					<span class="image main">
+						<img src="images/routeshare_banner.png" alt="RouteShare app screenshots" />
+						<figcaption>Mobile Template: https://previewed.app/template/16DCE402</figcaption>
+					</span>
 
+				</figure>
 
 				<h2>Core Technologies</h2>
 				<ul class="tech-list">
-					<li><strong>Flutter (Dart)</strong> - Cross-platform mobile app with custom UI, dialogs, and feature flows</li>
+					<li><strong>Flutter (Dart)</strong> - Cross-platform mobile app with custom UI, dialogs, and feature
+						flows</li>
 					<li><strong>Firebase Authentication</strong> - User sign-in and account management</li>
-					<li><strong>Cloud Firestore</strong> - Real-time storage for friends, challenges, groups, and gym data</li>
-					<li><strong>Firebase Cloud Functions</strong> - Server-side validation, scoring flows, and write protection</li>
-					<li><strong>BLoC + Repository Pattern</strong> - Predictable state management and separation of UI from data logic</li>
-					<li><strong>Firebase Cloud Messaging</strong> - Push notifications for friend requests, challenges, and groups</li>
+					<li><strong>Cloud Firestore</strong> - Real-time storage for friends, challenges, groups, and gym
+						data</li>
+					<li><strong>Firebase Cloud Functions</strong> - Server-side validation, scoring flows, rate limiting
+						and write
+						protection</li>
+					<li><strong>BLoC + Repository Pattern</strong> - Predictable state management and separation of UI
+						from data logic</li>
+					<li><strong>Firebase Cloud Messaging</strong> - Push notifications for friend requests, challenges,
+						and groups</li>
 				</ul>
 
 				<h2>Supporting Technologies</h2>
 				<ul class="tech-list">
-					<li><strong>Firebase Storage</strong> - Route photo uploads and cloud-hosted media</li>
+					<li><strong>Firebase Storage</strong> - Cloud storage for challenge photos and application logs</li>
 					<li><strong>Firebase App Check</strong> - Additional protection for backend resources</li>
-					<li><strong>Flutter Local Notifications</strong> - Device-side notification handling and navigation</li>
-					<li><strong>Shared Preferences</strong> - Cached gym data and lightweight local persistence</li>
-					<li><strong>GetIt</strong> - Service location for shared application services</li>
-					<li><strong>Structured Logging</strong> - File-backed diagnostics and support workflows</li>
-					<li><strong>Image Compression</strong> - Reduced upload payloads for challenge photos</li>
-					<li><strong>Google Mobile Ads</strong> - Banner ad integration within the app shell</li>
+					<li><strong>Flutter Local Notifications</strong> - Device notification handling
+					</li>
+					<li><strong>Shared Preferences</strong> - Cached data and local persistence</li>
+					<li><strong>GetIt</strong> - Used to manage and access shared services across the app</li>
+					<li><strong>Structured Logging</strong> - Clear, organised logs to help diagnose issues and monitor
+						the app</li>
+					<li><strong>Image Compression</strong> - Reduced upload size for challenge photos</li>
+					<li><strong>Google Mobile Ads</strong> - Ad integration </li>
 					<li><strong>Git & GitHub</strong> - Source control and project management</li>
-					<li><strong>Flutter Test + bloc_test</strong> - Unit coverage for core state logic</li>
 				</ul>
 
 				<h2>Features</h2>
 
 				<div class="features-grid">
 					<div class="feature-card">
-						<h3>Route Sharing</h3>
-						<p>Climbers can recommend specific routes to friends with gym, grade, wall location, notes, and
-							optional route photos.</p>
+						<h3>Send Challenges</h3>
+						<p>Challenge friends to climb specific routes by selecting the gym, grade, style, location, and
+							adding hints or optional photos.</p>
 					</div>
 
 					<div class="feature-card">
 						<h3>Friend Network</h3>
-						<p>Users connect through friend requests, manage accepted and pending relationships, and use a
-							shareable friend code to grow their climbing network.</p>
+						<p>Connect with other climbers using friend requests or a shareable friend code.</p>
 					</div>
 
+
 					<div class="feature-card">
-						<h3>Competitive Challenges</h3>
-						<p>Challenges can be sent to friends, accepted, and completed with scoring based on attempts,
-							flash bonuses, and hint penalties.</p>
+						<h3>Complete Challenges</h3>
+						<p>Track completed challenges and earn scores based on attempts, flash bonuses, and hint
+							penalties.</p>
 					</div>
 
 					<div class="feature-card">
 						<h3>Groups and Leaderboards</h3>
-						<p>Players can create groups, invite friends, extend expiry windows, and compete on live
-							leaderboards until the group winner is decided.</p>
+						<p>Create groups with friends, set an expiry time, and compete on a live leaderboard.</p>
 					</div>
 
 					<div class="feature-card">
 						<h3>Gym Maps</h3>
-						<p>Gym-specific SVG map support helps users identify route areas and visually place climbs inside
-							the venue.</p>
+						<p>Gym-specific SVG map support helps users identify route areas and visually place climbs
+							inside
+							the gym.</p>
 					</div>
 
 					<div class="feature-card">
 						<h3>Smart Notifications</h3>
-						<p>Push and local notifications route users directly into friends, challenges, or group screens
-							when activity happens.</p>
+						<p>Push and local notifications keep users updated and take them directly to the relevant
+							screen.</p>
 					</div>
 
 					<div class="feature-card">
@@ -125,68 +133,72 @@
 						<p>Challenges and groups have built-in expiry behaviour so shared content stays current and old
 							competitions clean themselves up over time.</p>
 					</div>
-
 					<div class="feature-card">
 						<h3>Support and Moderation Tools</h3>
-						<p>The app includes feedback submission, user reporting, downloadable logs, account management,
-							and privacy/terms flows for a more complete production-ready experience.</p>
+						<p>Built-in tools for feedback, user reporting, downloadable logs, and account management.</p>
 					</div>
+
 				</div>
 			</div>
+
+			<footer id="footer">
+				<div class="inner">
+					<section>
+						<h2>Get in touch</h2>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half">
+									<input type="text" name="name" id="name" placeholder="Name" />
+								</div>
+								<div class="field half">
+									<input type="email" name="email" id="email" placeholder="Email" />
+								</div>
+								<div class="field">
+									<textarea name="message" id="message" placeholder="Message"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send" class="primary" /></li>
+							</ul>
+						</form>
+					</section>
+					<section>
+						<h2>Follow</h2>
+						<ul class="icons">
+							<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a>
+							</li>
+							<li><a href="#" class="icon brands style2 fa-facebook-f"><span
+										class="label">Facebook</span></a>
+							</li>
+							<li><a href="#" class="icon brands style2 fa-instagram"><span
+										class="label">Instagram</span></a>
+							</li>
+							<li><a href="#" class="icon brands style2 fa-dribbble"><span
+										class="label">Dribbble</span></a>
+							</li>
+							<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a>
+							</li>
+							<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a>
+							</li>
+							<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+							<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a>
+							</li>
+						</ul>
+					</section>
+					<ul class="copyright">
+						<li>&copy; Telperion Apps. All rights reserved</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
 		</div>
 
-		<footer id="footer">
-			<div class="inner">
-				<section>
-					<h2>Get in touch</h2>
-					<form method="post" action="#">
-						<div class="fields">
-							<div class="field half">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="field half">
-								<input type="email" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="field">
-								<textarea name="message" id="message" placeholder="Message"></textarea>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send" class="primary" /></li>
-						</ul>
-					</form>
-				</section>
-				<section>
-					<h2>Follow</h2>
-					<ul class="icons">
-						<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a>
-						</li>
-						<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a>
-						</li>
-						<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a>
-						</li>
-						<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a>
-						</li>
-						<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-						<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-						<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</section>
-				<ul class="copyright">
-					<li>&copy; Telperion Apps. All rights reserved</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</footer>
-
-	</div>
-
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 </body>
 

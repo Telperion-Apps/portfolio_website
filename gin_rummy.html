@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Gin Rummy - Telperion Apps</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<div id="wrapper">
+
+		<header id="header">
+			<div class="inner">
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/logo.png" alt="" /></span>
+					<span class="title">Telperion Apps</span>
+				</a>
+
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="routeshare.html">RouteShare App</a></li>
+				<li><a href="datespark.html">DateSpark App</a></li>
+				<li><a href="gin_rummy.html">Gin Rummy Game</a></li>
+				<li><a href="workhours.html">Work Hours App</a></li>
+			</ul>
+		</nav>
+
+		<div id="main">
+			<div class="inner">
+				<h1>Gin Rummy</h1>
+				<span class="image main"><img src="images/gin_rummy_banner.png" alt="Gin Rummy game screens" /></span>
+
+				<section class="project-intro">
+					<p>
+						Gin Rummy is a two-player card game built in Python with Pygame, designed around the full round
+						flow of drawing, discarding, sorting hands, knocking, calling gin, and tracking match scores.
+						It combines custom artwork with a client-server setup so two players can
+						play the same match across a local network.
+					</p>
+				</section>
+
+				<h2>Core Technologies</h2>
+				<ul class="tech-list">
+					<li><strong>Python</strong> - Main language for gameplay logic, networking, and application flow
+					</li>
+					<li><strong>Pygame</strong> - Core game framework used for rendering, input handling, game loop
+						management, and screen updates.</li>
+					<li><strong>Python Sockets</strong> - TCP socket communication used to send and receive game state
+						updates between the server and both players.</li>
+					<li><strong>Threading</strong> - Handles concurrent player connections on the server side</li>
+					<li><strong>Object-Oriented Design</strong> - Encapsulated game state across player, game, and
+						condition classes</li>
+				</ul>
+
+				<h2>Supporting Technologies</h2>
+				<ul class="tech-list">
+					<li><strong>Pickle Serialization</strong> - Serializes player and game state objects for
+						transmission across the network.</li>
+					<li><strong>Custom Assets</strong> - Hand-crafted card, button, scoreboard, and victory
+						screen art</li>
+					<li><strong>Modular Button Handlers</strong> - Client and server button logic separated to keep
+						event handling organised and maintainable.</li>
+					<li><strong>State Validation</strong> - Win, deadwood, and round conditions managed through
+						dedicated game checks</li>
+					<li><strong>Git & GitHub</strong> - Version control and project iteration</li>
+				</ul>
+
+				<section class="project-section">
+					<h2>Project Highlights</h2>
+					<div class="features-grid">
+						<div class="feature-card">
+							<h3>Full Round Gameplay</h3>
+							<p>Players can draw from the deck or discard pile, reorganize their hand, and make tactical
+								decisions around knocking or pushing for gin.</p>
+						</div>
+
+						<div class="feature-card">
+							<h3>Multiplayer</h3>
+							<p>A local socket server keeps both players synchronized so turns, scores, and card state
+								remain consistent across the game.</p>
+						</div>
+
+						<div class="feature-card">
+							<h3>Automatic Set Highlighting</h3>
+							<p>Cards that form valid sets or runs are automatically highlighted, helping players quickly
+								recognise scoring combinations in their hand.</p>
+						</div>
+
+						<div class="feature-card">
+							<h3>Deadwood Scoring</h3>
+							<p>The game evaluates leftover card values, compares both hands at round end, and applies
+								score changes based on standard Gin Rummy outcomes.</p>
+						</div>
+
+						<div class="feature-card">
+							<h3>Knock, Gin, and Undercut</h3>
+							<p>Important round-ending buttons are surfaced clearly so the player immediately
+								knows when they can end a round.</p>
+						</div>
+
+						<div class="feature-card">
+							<h3>Custom Interface Art</h3>
+							<p>The table, scoreboard, buttons, and end screens were edited and customised for use
+								throughout the game interface.</p>
+						</div>
+
+					</div>
+				</section>
+			</div>
+
+		</div>
+
+		<footer id="footer">
+			<div class="inner">
+				<section>
+					<h2>Get in touch</h2>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field half">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send" class="primary" /></li>
+						</ul>
+					</form>
+				</section>
+				<section>
+					<h2>Follow</h2>
+					<ul class="icons">
+						<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a>
+						</li>
+						<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a>
+						</li>
+						<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a>
+						</li>
+						<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a>
+						</li>
+						<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a>
+						</li>
+						<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a>
+						</li>
+						<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+						<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a>
+						</li>
+					</ul>
+				</section>
+				<ul class="copyright">
+					<li>&copy; Telperion Apps. All rights reserved</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
